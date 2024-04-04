@@ -55,6 +55,10 @@ npm run seed
 docker-compose up -d
 ```
 
+## Documento Swagger
+
+http://localhost:3000/doc-api
+
 ## Variables de entorno
 
 ```js
