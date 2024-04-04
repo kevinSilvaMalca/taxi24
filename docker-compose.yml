@@ -1,0 +1,22 @@
+version: '3'
+services:
+  postgrestaxi24:
+    image: postgres:13
+    container_name: postgres
+    environment:
+      - POSTGRES_USER=taxi
+      - POSTGRES_PASSWORD=PhZO90KL3Dt6fWmo9Y3XVz
+      - POSTGRES_DB=taxi24
+    ports:
+      - '5432:5432'
+    volumes:
+      - postgresdb:/var/lib/postgresql/taxi24/data
+    networks:
+      - esnet
+
+volumes:
+  postgresdb:
+    driver: local
+
+networks:
+  esnet:
